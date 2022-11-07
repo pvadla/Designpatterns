@@ -1,16 +1,23 @@
 package creational.singleton.lazyloading;
 
-public class LoggerInstanceLazy {
+import java.io.Serializable;
+
+public class LoggerInstanceLazy implements Serializable, Cloneable {
     private static LoggerInstanceLazy instance = null;
 
-    LoggerInstanceLazy(){
+    private LoggerInstanceLazy(){
 
     }
 
-    public LoggerInstanceLazy getInstance(){
+    public static LoggerInstanceLazy getInstance(){
         if(instance == null){
             instance = new LoggerInstanceLazy();
         }
         return instance;
+    }
+
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
     }
 }
