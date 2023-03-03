@@ -5,7 +5,7 @@ import java.io.Serializable;
 public class LoggerInstanceLazy implements Serializable, Cloneable {
     private static LoggerInstanceLazy instance = null;
 
-    private LoggerInstanceLazy(){
+    public LoggerInstanceLazy(){
 
     }
 

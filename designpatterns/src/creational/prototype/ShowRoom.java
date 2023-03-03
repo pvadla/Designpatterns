@@ -37,5 +37,12 @@ public class ShowRoom {
             System.out.println(vehicle.toString());
             System.out.println("---------------------------------------------------------");
         }
+
+        c1.seats = 10;
+        //vehicles.add(c1);
+        for (Vehicle vehicle : vehiclesCopy) { // Printing cloned objects
+            System.out.println(vehicle.toString());
+            System.out.println("---------------------------------------------------------");
+        }
     }
 }
