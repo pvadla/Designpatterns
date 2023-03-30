@@ -2,6 +2,6 @@ package inversionofcontrol;
 
 public class DataAccess {
     public String getData() {
-        return "data";
+        return "Implemented Inversion of COntrol";
     }
 }

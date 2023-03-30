@@ -1,7 +1,7 @@
-package dependencyinversionprinciple;
+package dependencyinjection;
 
 public class DataAccess implements ICustomerDataAccess {
     public String getCustomerName() {
-        return "Dependency Inversion Principle";
+        return "Implemented dependency Injection";
     }
 }

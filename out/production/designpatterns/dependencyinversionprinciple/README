@@ -1,0 +1,15 @@
+Explanation Of DependencyInversionPrinciple:
+
+Definition:
+1. High level modules should not directly depend on the low level modules, instead depend on abstractions.
+2. Abstractions should depend on details. details should not depend on abstractions.
+
+
+
+1. This is the continuation of InversionOfControl.
+2. The advantages of implementing DIP in th example is that the CustomerBusinessLogic and DataAccess classes are loosely coupled classes because
+CustomerBusinessLogic does not depend on the concrete DataAccess class, instead it includes a reference of the ICustomerDataAccess interface.
+So now, we can easily use another class which implements ICustomerDataAccess with a different implementation.
+3. Still, we have not achieved fully loosely coupled classes because the CustomerBusinessLogic class includes a factory class to get the reference of ICustomerDataAccess.
+This is where the Dependency Injection pattern helps us.
+
