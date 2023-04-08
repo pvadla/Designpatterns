@@ -2,10 +2,10 @@ package creational.singleton.lazyloading;
 
 public class LoggerInstanceLazyDemo {
     public static void main(String[] args) {
-        LoggerInstanceLazy instance = new LoggerInstanceLazy();
+        LoggerInstanceLazy instance = LoggerInstanceLazy.getInstance();
         System.out.println(instance.getInstance());
 
-        LoggerInstanceLazy instance2 = new LoggerInstanceLazy();
+        LoggerInstanceLazy instance2 = LoggerInstanceLazy.getInstance();
         System.out.println(instance2.getInstance());
     }
 }
