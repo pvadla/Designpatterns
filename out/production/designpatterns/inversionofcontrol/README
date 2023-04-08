@@ -1,0 +1,7 @@
+Explanation Of Inversion Control:
+
+1. We have two classes CustomerBusinessLogic and DataAccess. Customer Business Logic depends on DataAccess.
+2. We have implemented Inversion Of Control by giving control to DataAccessFactory class to create the DataAccess object.
+3. Even though object is created by the DataAccessFactory class, CustomerBusinessLogic is dependent on DataAccess class.
+
+Inversion of Control is the principle where control will be give to other class, other than the main responsibility of that class.

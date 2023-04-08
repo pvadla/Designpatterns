@@ -1,0 +1,8 @@
+Dependency Injection:
+
+
+1. Here we no longer use DataAccessFactory to create the object.
+2. We pass the respective object to the CustomerBusinessLogic constructor using Constructor based injection.
+3. We have propertybasedinjection and methodbasedinjection as well.
+
+
