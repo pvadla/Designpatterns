@@ -5,11 +5,11 @@ package creational.singleton.threadsafe;
 public class LoggerInstanceThreadSafe {
     private static LoggerInstanceThreadSafe instance = null;
 
-    LoggerInstanceThreadSafe(){
+    private LoggerInstanceThreadSafe(){
 
     }
 
-    public LoggerInstanceThreadSafe getInstance(){
+    public static LoggerInstanceThreadSafe getInstance(){
         if(instance == null){
             synchronized (LoggerInstanceThreadSafe.class){
                 if(instance == null){
